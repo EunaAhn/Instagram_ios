@@ -15,6 +15,8 @@ class RegisterViewController: UIViewController {
     var nickName: String = ""
     var password: String = ""
     
+    var userInfo: ((UserInfo) -> Void)?
+    
     
 
     // 유효성 검사를 위한 프로퍼티
@@ -109,6 +111,14 @@ class RegisterViewController: UIViewController {
     @IBAction func registerButtonDidTapped(_ sender: UIButton) {
         //뒤로 가기
         self.navigationController?.popViewController(animated: true)
+        
+        let userInfo = UserInfo(
+            email: self.email,
+            name: self.name,
+            nickname: self.nickName,
+            password: self.password)
+        
+        self.userInfo?(userInfo)
     }
     
     // MARK: - Helpers
@@ -123,6 +133,8 @@ class RegisterViewController: UIViewController {
     
     //사용자가 입력한 회원 정보를 확인하고 -> UI 업데이트
     private func validateUserInfo(){
+        
+        print("result : \(isValidEmail),\(isValidName),\(isValidNickName),\(isValidPassword)")
         
         if isValidEmail
             && isValidName
