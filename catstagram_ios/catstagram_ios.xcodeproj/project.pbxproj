@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FF821F19281AD3CE00CA2CCA /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF821F18281AD3CE00CA2CCA /* UserInfo.swift */; };
-		FF821F1D281AEF6300CA2CCA /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF821F1C281AEF6200CA2CCA /* TestViewController.swift */; };
 		FFEADF8627F6DC0200548C6A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEADF8527F6DC0200548C6A /* Color+Extension.swift */; };
 		FFEADF8827F6DD8300548C6A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEADF8727F6DD8300548C6A /* LoginViewController.swift */; };
 		FFEADF8A27F6E2BE00548C6A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEADF8927F6E2BE00548C6A /* RegisterViewController.swift */; };
@@ -43,7 +42,6 @@
 
 /* Begin PBXFileReference section */
 		FF821F18281AD3CE00CA2CCA /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		FF821F1C281AEF6200CA2CCA /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		FFEADF8527F6DC0200548C6A /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		FFEADF8727F6DD8300548C6A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFEADF8927F6E2BE00548C6A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				FFEADF8D2800198600548C6A /* UIViewController+Extension.swift */,
 				FFF1938F27E328B200222CD2 /* Main.storyboard */,
 				FFEADF8727F6DD8300548C6A /* LoginViewController.swift */,
-				FF821F1C281AEF6200CA2CCA /* TestViewController.swift */,
 				FFEADF8927F6E2BE00548C6A /* RegisterViewController.swift */,
 				FF821F18281AD3CE00CA2CCA /* UserInfo.swift */,
 				FFF1939227E328B900222CD2 /* Assets.xcassets */,
@@ -283,7 +280,6 @@
 				FF821F19281AD3CE00CA2CCA /* UserInfo.swift in Sources */,
 				FFEADF8E2800198600548C6A /* UIViewController+Extension.swift in Sources */,
 				FFF1938C27E328B200222CD2 /* SceneDelegate.swift in Sources */,
-				FF821F1D281AEF6300CA2CCA /* TestViewController.swift in Sources */,
 				FFEADF8627F6DC0200548C6A /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
