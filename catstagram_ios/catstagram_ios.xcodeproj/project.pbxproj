@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		FF821F19281AD3CE00CA2CCA /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF821F18281AD3CE00CA2CCA /* UserInfo.swift */; };
+		FF821F20281CA7A700CA2CCA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF821F1F281CA7A700CA2CCA /* HomeViewController.swift */; };
+		FF821F24281CAB6400CA2CCA /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF821F22281CAB6400CA2CCA /* FeedTableViewCell.swift */; };
+		FF821F25281CAB6400CA2CCA /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF821F23281CAB6400CA2CCA /* FeedTableViewCell.xib */; };
+		FF821F28281D4FE700CA2CCA /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF821F26281D4FE700CA2CCA /* StoryTableViewCell.swift */; };
+		FF821F29281D4FE700CA2CCA /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF821F27281D4FE700CA2CCA /* StoryTableViewCell.xib */; };
+		FF821F2C281D592500CA2CCA /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF821F2A281D592500CA2CCA /* StoryCollectionViewCell.swift */; };
+		FF821F2D281D592500CA2CCA /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF821F2B281D592500CA2CCA /* StoryCollectionViewCell.xib */; };
+		FF821F30281D725A00CA2CCA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF821F2F281D725A00CA2CCA /* ProfileViewController.swift */; };
+		FF821F34281D75BC00CA2CCA /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF821F32281D75BC00CA2CCA /* ProfileCollectionViewCell.swift */; };
+		FF821F35281D75BC00CA2CCA /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF821F33281D75BC00CA2CCA /* ProfileCollectionViewCell.xib */; };
 		FFEADF8627F6DC0200548C6A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEADF8527F6DC0200548C6A /* Color+Extension.swift */; };
 		FFEADF8827F6DD8300548C6A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEADF8727F6DD8300548C6A /* LoginViewController.swift */; };
 		FFEADF8A27F6E2BE00548C6A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEADF8927F6E2BE00548C6A /* RegisterViewController.swift */; };
@@ -42,6 +52,16 @@
 
 /* Begin PBXFileReference section */
 		FF821F18281AD3CE00CA2CCA /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		FF821F1F281CA7A700CA2CCA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF821F22281CAB6400CA2CCA /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		FF821F23281CAB6400CA2CCA /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		FF821F26281D4FE700CA2CCA /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		FF821F27281D4FE700CA2CCA /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
+		FF821F2A281D592500CA2CCA /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF821F2B281D592500CA2CCA /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		FF821F2F281D725A00CA2CCA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FF821F32281D75BC00CA2CCA /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF821F33281D75BC00CA2CCA /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 		FFEADF8527F6DC0200548C6A /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		FFEADF8727F6DD8300548C6A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFEADF8927F6E2BE00548C6A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +106,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF821F1E281CA77100CA2CCA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FF821F21281CAB3100CA2CCA /* Cell */,
+				FF821F1F281CA7A700CA2CCA /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FF821F21281CAB3100CA2CCA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FF821F22281CAB6400CA2CCA /* FeedTableViewCell.swift */,
+				FF821F23281CAB6400CA2CCA /* FeedTableViewCell.xib */,
+				FF821F26281D4FE700CA2CCA /* StoryTableViewCell.swift */,
+				FF821F27281D4FE700CA2CCA /* StoryTableViewCell.xib */,
+				FF821F2A281D592500CA2CCA /* StoryCollectionViewCell.swift */,
+				FF821F2B281D592500CA2CCA /* StoryCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FF821F2E281D722500CA2CCA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				FF821F31281D758600CA2CCA /* Cell */,
+				FF821F2F281D725A00CA2CCA /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		FF821F31281D758600CA2CCA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FF821F32281D75BC00CA2CCA /* ProfileCollectionViewCell.swift */,
+				FF821F33281D75BC00CA2CCA /* ProfileCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		FFF1937D27E328B100222CD2 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +169,8 @@
 		FFF1938827E328B100222CD2 /* catstagram_ios */ = {
 			isa = PBXGroup;
 			children = (
+				FF821F2E281D722500CA2CCA /* Profile */,
+				FF821F1E281CA77100CA2CCA /* Home */,
 				FFF1938927E328B100222CD2 /* AppDelegate.swift */,
 				FFF1938B27E328B200222CD2 /* SceneDelegate.swift */,
 				FFEADF8527F6DC0200548C6A /* Color+Extension.swift */,
@@ -247,7 +309,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF1939627E328B900222CD2 /* LaunchScreen.storyboard in Resources */,
+				FF821F25281CAB6400CA2CCA /* FeedTableViewCell.xib in Resources */,
 				FFF1939327E328B900222CD2 /* Assets.xcassets in Resources */,
+				FF821F35281D75BC00CA2CCA /* ProfileCollectionViewCell.xib in Resources */,
+				FF821F29281D4FE700CA2CCA /* StoryTableViewCell.xib in Resources */,
+				FF821F2D281D592500CA2CCA /* StoryCollectionViewCell.xib in Resources */,
 				FFF1939127E328B200222CD2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,11 +342,17 @@
 				FFEADF8C28000D7C00548C6A /* UIView+Extension.swift in Sources */,
 				FFEADF8827F6DD8300548C6A /* LoginViewController.swift in Sources */,
 				FFEADF8A27F6E2BE00548C6A /* RegisterViewController.swift in Sources */,
+				FF821F28281D4FE700CA2CCA /* StoryTableViewCell.swift in Sources */,
+				FF821F2C281D592500CA2CCA /* StoryCollectionViewCell.swift in Sources */,
 				FFF1938A27E328B200222CD2 /* AppDelegate.swift in Sources */,
 				FF821F19281AD3CE00CA2CCA /* UserInfo.swift in Sources */,
+				FF821F20281CA7A700CA2CCA /* HomeViewController.swift in Sources */,
 				FFEADF8E2800198600548C6A /* UIViewController+Extension.swift in Sources */,
 				FFF1938C27E328B200222CD2 /* SceneDelegate.swift in Sources */,
+				FF821F34281D75BC00CA2CCA /* ProfileCollectionViewCell.swift in Sources */,
+				FF821F30281D725A00CA2CCA /* ProfileViewController.swift in Sources */,
 				FFEADF8627F6DC0200548C6A /* Color+Extension.swift in Sources */,
+				FF821F24281CAB6400CA2CCA /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

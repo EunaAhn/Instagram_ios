@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hmx-4D-enH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lZt-K4-wLQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -157,38 +157,59 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="83.705357142857139"/>
         </scene>
-        <!--Profile-->
+        <!--Profile View Controller-->
         <scene sceneID="loZ-YT-2kP">
             <objects>
-                <viewController id="kk6-UU-quI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" id="kk6-UU-quI" customClass="ProfileViewController" customModule="catstagram_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oAw-ld-f2Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaO-gy-u7r">
-                                <rect key="frame" x="169.5" y="433" width="75.5" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AH5-Wi-49y">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ewA-ka-be5">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qMo-Xo-hGH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="aaO-gy-u7r" firstAttribute="centerX" secondItem="oAw-ld-f2Q" secondAttribute="centerX" id="WtI-Nz-sYE"/>
-                            <constraint firstItem="aaO-gy-u7r" firstAttribute="centerY" secondItem="oAw-ld-f2Q" secondAttribute="centerY" id="uVI-IK-NGi"/>
+                            <constraint firstItem="AH5-Wi-49y" firstAttribute="leading" secondItem="qMo-Xo-hGH" secondAttribute="leading" id="FTs-bS-EtY"/>
+                            <constraint firstItem="qMo-Xo-hGH" firstAttribute="trailing" secondItem="AH5-Wi-49y" secondAttribute="trailing" id="Ojq-qT-Wlk"/>
+                            <constraint firstItem="AH5-Wi-49y" firstAttribute="top" secondItem="qMo-Xo-hGH" secondAttribute="top" id="Oph-eY-Fz6"/>
+                            <constraint firstItem="qMo-Xo-hGH" firstAttribute="bottom" secondItem="AH5-Wi-49y" secondAttribute="bottom" id="v5g-ew-GtG"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="EoH-Tk-fZN"/>
+                    <navigationItem key="navigationItem" id="eZe-a9-tgw">
+                        <barButtonItem key="leftBarButtonItem" title="Nickname" id="29w-2T-RkW">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="line.3.horizontal" catalog="system" id="Uxp-1w-mZk">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="plus.app" catalog="system" id="VHp-gx-klf">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="profileCollectionView" destination="AH5-Wi-49y" id="RPZ-Dy-JZS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wqJ-oV-NNa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1474" y="1485"/>
+            <point key="canvasLocation" x="2384.057971014493" y="1484.5982142857142"/>
         </scene>
         <!--Home-->
         <scene sceneID="rPo-X2-OOC">
             <objects>
-                <viewController id="fYt-NC-LSL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="fYt-NC-LSL" customClass="HomeViewController" customModule="catstagram_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OqB-2I-wzT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,16 +266,27 @@
                                     <constraint firstAttribute="trailing" secondItem="1aB-Or-zWo" secondAttribute="trailing" constant="15" id="tqu-pq-78P"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1vH-i5-EKh">
+                                <rect key="frame" x="0.0" y="94" width="414" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dyr-Y6-Yjw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="dyr-Y6-Yjw" firstAttribute="bottom" secondItem="1vH-i5-EKh" secondAttribute="bottom" id="BRa-aO-KWs"/>
+                            <constraint firstItem="dyr-Y6-Yjw" firstAttribute="trailing" secondItem="1vH-i5-EKh" secondAttribute="trailing" id="NxJ-4u-QXF"/>
                             <constraint firstItem="dk4-yj-qIW" firstAttribute="leading" secondItem="dyr-Y6-Yjw" secondAttribute="leading" id="Rjw-rz-Shd"/>
+                            <constraint firstItem="1vH-i5-EKh" firstAttribute="top" secondItem="dk4-yj-qIW" secondAttribute="bottom" id="V1e-4b-qiS"/>
                             <constraint firstItem="dk4-yj-qIW" firstAttribute="top" secondItem="dyr-Y6-Yjw" secondAttribute="top" id="YyW-sP-UYi"/>
+                            <constraint firstItem="1vH-i5-EKh" firstAttribute="leading" secondItem="dyr-Y6-Yjw" secondAttribute="leading" id="dMg-1p-mAS"/>
                             <constraint firstItem="dyr-Y6-Yjw" firstAttribute="trailing" secondItem="dk4-yj-qIW" secondAttribute="trailing" id="kIs-v7-ZPt"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="ITe-A4-DyV"/>
+                    <connections>
+                        <outlet property="tableView" destination="1vH-i5-EKh" id="yk6-Gc-5rL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yo9-wa-xP3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -271,7 +303,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="fYt-NC-LSL" kind="relationship" relationship="viewControllers" id="ev4-Ub-ZQF"/>
-                        <segue destination="kk6-UU-quI" kind="relationship" relationship="viewControllers" id="JoG-KB-a0e"/>
+                        <segue destination="ikI-a9-xCO" kind="relationship" relationship="viewControllers" id="JoG-KB-a0e"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UJH-1P-eSk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -471,6 +503,25 @@
             </objects>
             <point key="canvasLocation" x="186" y="84"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="lJO-Y9-gg0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ikI-a9-xCO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" id="EoH-Tk-fZN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nNh-ME-rRZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kk6-UU-quI" kind="relationship" relationship="rootViewController" id="vvN-Pn-ZXD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="je9-8U-1dp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1473.913043478261" y="1484.5982142857142"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
@@ -479,6 +530,8 @@
         <image name="ic_home_heart" width="512" height="512"/>
         <image name="ic_home_send" width="512" height="512"/>
         <image name="ic_home_upload" width="512" height="512"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
