@@ -1,0 +1,6 @@
+framework module Pods_catstagram_ios_catstagram_iosUITests {
+  umbrella header "Pods-catstagram_ios-catstagram_iosUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
