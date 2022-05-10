@@ -26,6 +26,9 @@
 		FF970A67282A5817000AF1D6 /* FeedAPIInuput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A66282A5817000AF1D6 /* FeedAPIInuput.swift */; };
 		FF970A69282A5895000AF1D6 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A68282A5895000AF1D6 /* FeedModel.swift */; };
 		FF970A6B282A58EC000AF1D6 /* FeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A6A282A58EC000AF1D6 /* FeedDataManager.swift */; };
+		FF970A6E282AB88C000AF1D6 /* FeedUploadInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A6D282AB88C000AF1D6 /* FeedUploadInput.swift */; };
+		FF970A70282AB906000AF1D6 /* FeedUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A6F282AB906000AF1D6 /* FeedUploadModel.swift */; };
+		FF970A72282ABAA1000AF1D6 /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A71282ABAA1000AF1D6 /* FeedUploadDataManager.swift */; };
 		FFEADF8627F6DC0200548C6A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEADF8527F6DC0200548C6A /* Color+Extension.swift */; };
 		FFEADF8827F6DD8300548C6A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEADF8727F6DD8300548C6A /* LoginViewController.swift */; };
 		FFEADF8A27F6E2BE00548C6A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEADF8927F6E2BE00548C6A /* RegisterViewController.swift */; };
@@ -84,6 +87,9 @@
 		FF970A66282A5817000AF1D6 /* FeedAPIInuput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIInuput.swift; sourceTree = "<group>"; };
 		FF970A68282A5895000AF1D6 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
 		FF970A6A282A58EC000AF1D6 /* FeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManager.swift; sourceTree = "<group>"; };
+		FF970A6D282AB88C000AF1D6 /* FeedUploadInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadInput.swift; sourceTree = "<group>"; };
+		FF970A6F282AB906000AF1D6 /* FeedUploadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadModel.swift; sourceTree = "<group>"; };
+		FF970A71282ABAA1000AF1D6 /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
 		FFEADF8527F6DC0200548C6A /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		FFEADF8727F6DD8300548C6A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFEADF8927F6E2BE00548C6A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 		FF821F1E281CA77100CA2CCA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				FF970A6C282AB582000AF1D6 /* FeedUploadDataManager */,
 				FF970A65282A57BA000AF1D6 /* FeedDataManager */,
 				FF821F21281CAB3100CA2CCA /* Cell */,
 				FF821F1F281CA7A700CA2CCA /* HomeViewController.swift */,
@@ -221,6 +228,16 @@
 				FF970A6A282A58EC000AF1D6 /* FeedDataManager.swift */,
 			);
 			path = FeedDataManager;
+			sourceTree = "<group>";
+		};
+		FF970A6C282AB582000AF1D6 /* FeedUploadDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FF970A6D282AB88C000AF1D6 /* FeedUploadInput.swift */,
+				FF970A6F282AB906000AF1D6 /* FeedUploadModel.swift */,
+				FF970A71282ABAA1000AF1D6 /* FeedUploadDataManager.swift */,
+			);
+			path = FeedUploadDataManager;
 			sourceTree = "<group>";
 		};
 		FFF1937D27E328B100222CD2 = {
@@ -529,14 +546,17 @@
 			files = (
 				FFEADF8C28000D7C00548C6A /* UIView+Extension.swift in Sources */,
 				FF970A67282A5817000AF1D6 /* FeedAPIInuput.swift in Sources */,
+				FF970A70282AB906000AF1D6 /* FeedUploadModel.swift in Sources */,
 				FF970A69282A5895000AF1D6 /* FeedModel.swift in Sources */,
 				FFEADF8827F6DD8300548C6A /* LoginViewController.swift in Sources */,
+				FF970A6E282AB88C000AF1D6 /* FeedUploadInput.swift in Sources */,
 				FFEADF8A27F6E2BE00548C6A /* RegisterViewController.swift in Sources */,
 				FF821F28281D4FE700CA2CCA /* StoryTableViewCell.swift in Sources */,
 				FF821F2C281D592500CA2CCA /* StoryCollectionViewCell.swift in Sources */,
 				FF821F3D281D8A1700CA2CCA /* PostCollectionViewCell.swift in Sources */,
 				FFF1938A27E328B200222CD2 /* AppDelegate.swift in Sources */,
 				FF821F19281AD3CE00CA2CCA /* UserInfo.swift in Sources */,
+				FF970A72282ABAA1000AF1D6 /* FeedUploadDataManager.swift in Sources */,
 				FF821F20281CA7A700CA2CCA /* HomeViewController.swift in Sources */,
 				FFEADF8E2800198600548C6A /* UIViewController+Extension.swift in Sources */,
 				FFF1938C27E328B200222CD2 /* SceneDelegate.swift in Sources */,
