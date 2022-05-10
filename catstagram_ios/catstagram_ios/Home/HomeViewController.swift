@@ -45,7 +45,7 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as? FeedTableViewCell else{
                 return UITableViewCell()
             }
-            cell.sne
+            
             return cell
         }
     }
