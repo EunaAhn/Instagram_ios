@@ -7,6 +7,7 @@ target 'catstagram_ios' do
   pod 'Alamofire', '~>5.5'
 
   # Pods for catstagram_ios
+  pod 'Kingfisher', '~> 7.0'
 
   target 'catstagram_iosTests' do
     inherit! :search_paths

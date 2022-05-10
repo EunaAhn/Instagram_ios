@@ -10,6 +10,7 @@ import UIKit
 class HomeViewController: UIViewController{
     
     @IBOutlet weak var tableView: UITableView!
+    var arrayCat : [FeedModel] =  []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +23,16 @@ class HomeViewController: UIViewController{
         let storyNib = UINib(nibName: "StoryTableViewCell", bundle: nil)
         tableView.register(storyNib, forCellReuseIdentifier: "StoryTableViewCell")
         // Do any additional setup after loading the view.
+        
+        let input = FeedAPIInput(limit: 10, page: 0)
+        FeedDataManager().feedDataManager(input, self)
     }
 
 }
 
 extension HomeViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return arrayCat.count + 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
@@ -41,7 +45,7 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "FeedTableViewCell", for: indexPath) as? FeedTableViewCell else{
                 return UITableViewCell()
             }
-            cell.selectionStyle  = .none
+            cell.sne
             return cell
         }
     }
@@ -81,3 +85,9 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
 }
 
+extension HomeViewController {
+    func sucessAPI(_ result : [FeedModel]){
+        arrayCat = result
+        tableView.reloadData()
+    }
+}
