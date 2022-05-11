@@ -29,6 +29,9 @@
 		FF970A6E282AB88C000AF1D6 /* FeedUploadInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A6D282AB88C000AF1D6 /* FeedUploadInput.swift */; };
 		FF970A70282AB906000AF1D6 /* FeedUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A6F282AB906000AF1D6 /* FeedUploadModel.swift */; };
 		FF970A72282ABAA1000AF1D6 /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A71282ABAA1000AF1D6 /* FeedUploadDataManager.swift */; };
+		FF970A75282B4023000AF1D6 /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A74282B4023000AF1D6 /* UserFeedModel.swift */; };
+		FF970A77282B44E4000AF1D6 /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A76282B44E4000AF1D6 /* UserFeedDataManager.swift */; };
+		FF970A7C282B5BF8000AF1D6 /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A7B282B5BF8000AF1D6 /* DeleteUserFeed.swift */; };
 		FFEADF8627F6DC0200548C6A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEADF8527F6DC0200548C6A /* Color+Extension.swift */; };
 		FFEADF8827F6DD8300548C6A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEADF8727F6DD8300548C6A /* LoginViewController.swift */; };
 		FFEADF8A27F6E2BE00548C6A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEADF8927F6E2BE00548C6A /* RegisterViewController.swift */; };
@@ -90,6 +93,9 @@
 		FF970A6D282AB88C000AF1D6 /* FeedUploadInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadInput.swift; sourceTree = "<group>"; };
 		FF970A6F282AB906000AF1D6 /* FeedUploadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadModel.swift; sourceTree = "<group>"; };
 		FF970A71282ABAA1000AF1D6 /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
+		FF970A74282B4023000AF1D6 /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
+		FF970A76282B44E4000AF1D6 /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
+		FF970A7B282B5BF8000AF1D6 /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
 		FFEADF8527F6DC0200548C6A /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		FFEADF8727F6DD8300548C6A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFEADF8927F6E2BE00548C6A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +193,7 @@
 		FF821F2E281D722500CA2CCA /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				FF970A73282B3FE6000AF1D6 /* UserFeedDataManager */,
 				FF821F31281D758600CA2CCA /* Cell */,
 				FF821F2F281D725A00CA2CCA /* ProfileViewController.swift */,
 			);
@@ -238,6 +245,24 @@
 				FF970A71282ABAA1000AF1D6 /* FeedUploadDataManager.swift */,
 			);
 			path = FeedUploadDataManager;
+			sourceTree = "<group>";
+		};
+		FF970A73282B3FE6000AF1D6 /* UserFeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				FF970A78282B5BAA000AF1D6 /* UserFeedDelete */,
+				FF970A74282B4023000AF1D6 /* UserFeedModel.swift */,
+				FF970A76282B44E4000AF1D6 /* UserFeedDataManager.swift */,
+			);
+			path = UserFeedDataManager;
+			sourceTree = "<group>";
+		};
+		FF970A78282B5BAA000AF1D6 /* UserFeedDelete */ = {
+			isa = PBXGroup;
+			children = (
+				FF970A7B282B5BF8000AF1D6 /* DeleteUserFeed.swift */,
+			);
+			path = UserFeedDelete;
 			sourceTree = "<group>";
 		};
 		FFF1937D27E328B100222CD2 = {
@@ -547,9 +572,11 @@
 				FFEADF8C28000D7C00548C6A /* UIView+Extension.swift in Sources */,
 				FF970A67282A5817000AF1D6 /* FeedAPIInuput.swift in Sources */,
 				FF970A70282AB906000AF1D6 /* FeedUploadModel.swift in Sources */,
+				FF970A77282B44E4000AF1D6 /* UserFeedDataManager.swift in Sources */,
 				FF970A69282A5895000AF1D6 /* FeedModel.swift in Sources */,
 				FFEADF8827F6DD8300548C6A /* LoginViewController.swift in Sources */,
 				FF970A6E282AB88C000AF1D6 /* FeedUploadInput.swift in Sources */,
+				FF970A75282B4023000AF1D6 /* UserFeedModel.swift in Sources */,
 				FFEADF8A27F6E2BE00548C6A /* RegisterViewController.swift in Sources */,
 				FF821F28281D4FE700CA2CCA /* StoryTableViewCell.swift in Sources */,
 				FF821F2C281D592500CA2CCA /* StoryCollectionViewCell.swift in Sources */,
@@ -563,6 +590,7 @@
 				FF821F34281D75BC00CA2CCA /* ProfileCollectionViewCell.swift in Sources */,
 				FF821F30281D725A00CA2CCA /* ProfileViewController.swift in Sources */,
 				FF970A6B282A58EC000AF1D6 /* FeedDataManager.swift in Sources */,
+				FF970A7C282B5BF8000AF1D6 /* DeleteUserFeed.swift in Sources */,
 				FFEADF8627F6DC0200548C6A /* Color+Extension.swift in Sources */,
 				FF821F24281CAB6400CA2CCA /* FeedTableViewCell.swift in Sources */,
 			);
