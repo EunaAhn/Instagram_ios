@@ -32,6 +32,9 @@
 		FF970A75282B4023000AF1D6 /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A74282B4023000AF1D6 /* UserFeedModel.swift */; };
 		FF970A77282B44E4000AF1D6 /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A76282B44E4000AF1D6 /* UserFeedDataManager.swift */; };
 		FF970A7C282B5BF8000AF1D6 /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A7B282B5BF8000AF1D6 /* DeleteUserFeed.swift */; };
+		FF970A7E282C1604000AF1D6 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A7D282C1604000AF1D6 /* ReelsViewController.swift */; };
+		FF970A81282D5C14000AF1D6 /* ReelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF970A7F282D5C14000AF1D6 /* ReelsCollectionViewCell.swift */; };
+		FF970A82282D5C14000AF1D6 /* ReelsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF970A80282D5C14000AF1D6 /* ReelsCollectionViewCell.xib */; };
 		FFEADF8627F6DC0200548C6A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEADF8527F6DC0200548C6A /* Color+Extension.swift */; };
 		FFEADF8827F6DD8300548C6A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEADF8727F6DD8300548C6A /* LoginViewController.swift */; };
 		FFEADF8A27F6E2BE00548C6A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEADF8927F6E2BE00548C6A /* RegisterViewController.swift */; };
@@ -96,6 +99,11 @@
 		FF970A74282B4023000AF1D6 /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
 		FF970A76282B44E4000AF1D6 /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
 		FF970A7B282B5BF8000AF1D6 /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
+		FF970A7D282C1604000AF1D6 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
+		FF970A7F282D5C14000AF1D6 /* ReelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF970A80282D5C14000AF1D6 /* ReelsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReelsCollectionViewCell.xib; sourceTree = "<group>"; };
+		FF970A83282D62B4000AF1D6 /* dummyVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = dummyVideo.mp4; path = ../../../../../Downloads/dummyVideo.mp4; sourceTree = "<group>"; };
+		FF970A85282D6322000AF1D6 /* dummyVideo02.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = dummyVideo02.mp4; path = ../../../../../Downloads/dummyVideo02.mp4; sourceTree = "<group>"; };
 		FFEADF8527F6DC0200548C6A /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		FFEADF8727F6DD8300548C6A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFEADF8927F6E2BE00548C6A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -298,9 +306,14 @@
 				FFEADF8B28000D7C00548C6A /* UIView+Extension.swift */,
 				FFEADF8D2800198600548C6A /* UIViewController+Extension.swift */,
 				FFF1938F27E328B200222CD2 /* Main.storyboard */,
+				FF970A7D282C1604000AF1D6 /* ReelsViewController.swift */,
+				FF970A7F282D5C14000AF1D6 /* ReelsCollectionViewCell.swift */,
+				FF970A80282D5C14000AF1D6 /* ReelsCollectionViewCell.xib */,
 				FFEADF8727F6DD8300548C6A /* LoginViewController.swift */,
 				FFEADF8927F6E2BE00548C6A /* RegisterViewController.swift */,
 				FF821F18281AD3CE00CA2CCA /* UserInfo.swift */,
+				FF970A83282D62B4000AF1D6 /* dummyVideo.mp4 */,
+				FF970A85282D6322000AF1D6 /* dummyVideo02.mp4 */,
 				FFF1939227E328B900222CD2 /* Assets.xcassets */,
 				FFF1939427E328B900222CD2 /* LaunchScreen.storyboard */,
 				FFF1939727E328B900222CD2 /* Info.plist */,
@@ -441,6 +454,7 @@
 				FF821F35281D75BC00CA2CCA /* ProfileCollectionViewCell.xib in Resources */,
 				FF821F29281D4FE700CA2CCA /* StoryTableViewCell.xib in Resources */,
 				FF821F2D281D592500CA2CCA /* StoryCollectionViewCell.xib in Resources */,
+				FF970A82282D5C14000AF1D6 /* ReelsCollectionViewCell.xib in Resources */,
 				FFF1939127E328B200222CD2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,6 +589,7 @@
 				FF970A77282B44E4000AF1D6 /* UserFeedDataManager.swift in Sources */,
 				FF970A69282A5895000AF1D6 /* FeedModel.swift in Sources */,
 				FFEADF8827F6DD8300548C6A /* LoginViewController.swift in Sources */,
+				FF970A81282D5C14000AF1D6 /* ReelsCollectionViewCell.swift in Sources */,
 				FF970A6E282AB88C000AF1D6 /* FeedUploadInput.swift in Sources */,
 				FF970A75282B4023000AF1D6 /* UserFeedModel.swift in Sources */,
 				FFEADF8A27F6E2BE00548C6A /* RegisterViewController.swift in Sources */,
@@ -585,6 +600,7 @@
 				FF821F19281AD3CE00CA2CCA /* UserInfo.swift in Sources */,
 				FF970A72282ABAA1000AF1D6 /* FeedUploadDataManager.swift in Sources */,
 				FF821F20281CA7A700CA2CCA /* HomeViewController.swift in Sources */,
+				FF970A7E282C1604000AF1D6 /* ReelsViewController.swift in Sources */,
 				FFEADF8E2800198600548C6A /* UIViewController+Extension.swift in Sources */,
 				FFF1938C27E328B200222CD2 /* SceneDelegate.swift in Sources */,
 				FF821F34281D75BC00CA2CCA /* ProfileCollectionViewCell.swift in Sources */,
