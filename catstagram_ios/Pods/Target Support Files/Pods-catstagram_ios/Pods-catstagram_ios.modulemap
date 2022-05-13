@@ -1,4 +1,4 @@
-framework module Pods_catstagram_ios {
+module Pods_catstagram_ios {
   umbrella header "Pods-catstagram_ios-umbrella.h"
 
   export *
