@@ -26,7 +26,7 @@ class ReelsCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.backgroundColor = .green
+        contentView.backgroundColor = .white
     }
     
     required init?(coder: NSCoder) {
